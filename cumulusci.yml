@@ -32,12 +32,9 @@ tasks:
 sources:
     npsp:
         github: https://github.com/SalesforceFoundation/NPSP
-        tag: rel/3.163
-    
-    
-            
+
 flows:
     dependencies:
         steps:
             3:
-                flow: npsp:config_managed
+                flow: npsp:config_managed   
