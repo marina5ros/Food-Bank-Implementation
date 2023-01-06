@@ -5,10 +5,8 @@ project:
         name: Food-Bank-Implementation
         api_version: '55.0'
     dependencies:
-        
-        - github: "https://github.com/SalesforceFoundation/NPSP"
-        - github: "https://github.com/marina5ros/Food-Bank"
-    
+      - github: 'https://github.com/SalesforceFoundation/NPSP'
+      - github: 'https://github.com/marina5ros/Food-Bank'
     git:
         default_branch: 'main'
     source_format: sfdx
@@ -27,7 +25,7 @@ tasks:
 
     run_tests:
         options:
-            required_org_code_coverage_percent: 75 
+            required_org_code_coverage_percent: 75
 
 sources:
     npsp:
@@ -37,4 +35,4 @@ flows:
     dependencies:
         steps:
             3:
-                flow: npsp:config_managed   
+                flow: npsp:config_managed
